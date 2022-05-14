@@ -13,7 +13,7 @@ const Shop = () => {
   const [order, setOrder] = useState([]);
   const [isBasketShow, setBasketSow] = useState(false);
   const [alertName, setAlertName] = useState('');
-
+  
   const addToBasket = (item) => {
     const itemIndex = order.findIndex( elem => elem._id === item._id );
     if (itemIndex < 0) {
@@ -77,7 +77,7 @@ const decQuantity = (itemId) => {
   useEffect(() => {
     getProducts()
       .then(resp => {
-        console.log("Data", resp.data)
+/*         console.log("Data", resp.data) */
         setProducts(resp.data);
         setLoading(false);
       })

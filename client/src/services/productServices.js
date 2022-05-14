@@ -4,6 +4,7 @@ const apiUrl = "http://localhost:5000/api/product";
 
 export function getProducts() {
     return axios.get(apiUrl);
+    
 }
 
 export function addProduct(variables) {

@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-const  Header = () => {
+const Header = () => {
     return (
         <nav className='green darken-1'>
             <div className='nav-wrapper'>
@@ -9,13 +10,16 @@ const  Header = () => {
                 </a>
                 <ul id='nav-mobile' className='right hide-on-med-and-down'>
                     <li>
-                        <a
-                            href='/#'
-                            target='_blank'
-                            rel='noreferrer'
-                        >
-                            Zagluszka
-                        </a>
+                        <Link
+                            to='/'>
+                            Products
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to='/create'>
+                            Create Product
+                        </Link>
                     </li>
                 </ul>
             </div>
